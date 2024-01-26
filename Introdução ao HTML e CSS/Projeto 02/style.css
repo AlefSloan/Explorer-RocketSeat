@@ -1,10 +1,19 @@
 body {
   margin: 0;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
 }
 
 .page {
   width: 1080px;
-  margin: 65px auto 30px;
+  margin: 0 auto 0;
+  padding: 65px 30px;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +21,7 @@ body {
   gap: 110px;
 }
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,20 +37,22 @@ ul {
   padding: 0;
 }
 
-ul li {
+ul li a {
   font-family: "Mulish", sans-serif;
   color: #1F1534;
   font-size: 18px;
   
   line-height: 23px;
 
-  font-weight: bold;
-}
-
-ul li + li {
   opacity: 50%;
 
   font-weight: normal;
+}
+
+ul li a:hover {
+  opacity: 100%;
+
+  font-weight: bold;
 }
 
 .hero {
@@ -101,8 +112,15 @@ section button {
   font-weight: 500;
   line-height: 21px;
   font-family: "DM Sans", sans-serif;
-  color: #F9F9F9
+  color: #F9F9F9;
+
+  cursor: pointer;
 }
+
+section button:hover {
+  background: #437e69;
+}
+
 
 footer {
   display: flex;
@@ -120,7 +138,6 @@ footer p {
 
 footer p a {
   font-weight: bold;
-  text-decoration: none;
 
   color: #000000
 }
