@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>Crie e compartilhe seu evento.</h1>
+
+        <p>O primeiro passo, é preencher esse formulário de inscrição</p>
+      </header>
+
+      <form>
+        <fieldset>
+          <legend>Informações do Evento</legend>
+          
+          <div class="input-wrapper">
+            <label for="event-title">
+              <p>Título do evento <span>(mínimo 8 caracteres)</span></p>
+              <input type="text" name="event-title" id="event-title" />
+            </label>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="event-link">
+              <p>Link do evento <span>(comece com https://)</span></p>
+              <input type="text" name="event-link" id="event-link" />
+            </label>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-number">
+              <p>Whatsapp para contato <span>(somente números)</span></p>
+              <input type="number" name="event_number" id="event-number" />
+            </label>
+          </div>
+  
+          <div class="event-wrapper">
+            <label for="event-info">
+              <p>Informações extras</p>
+              <input type="textarea" name="event-info" id="event-info" />
+            </label>
+          </div>
+
+  
+          <label for="categories">
+            <p>Categoria</p>
+            <select name="category" id="categories">
+              <option value="show">Show</option>
+              <option value="party">Festa</option>
+            </select>
+          </label>
+        </fieldset>
+
+
+        <h2>Privacidade</h2>
+
+        <label for="email">
+          <p>E-mail do administrador <span>(digite um email válido)</span></p>
+          <input type="email" name="admin_email" id="email" />
+        </label>
+
+        <label for="password">
+          <p>Senha de acesso para os participantes <span>mínimo 8 caracteres</span></p>
+          <input type="password" name="event_password" id="password" />
+        </label>
+
+        <label for="private">
+          <p>Senha de acesso para os participantes <span>mínimo 8 caracteres</span></p>
+          <input type="password" name="is_private" id="private" />
+        </label>
+
+        <h2>Dia e hora</h2>
+
+        <label for="date">
+          Data
+          <input type="date" name="date" id="date" />
+        </label>
+
+        <label for="initial_time">
+          Das
+          <input type="datetime" name="initial_time" id="initial_time" />
+        </label>
+
+        <label for="end_time">
+          Até
+          <input type="datetime" name="end_time" id="end_time" />
+        </label>
+
+        <div>
+          <button>Salvar evento</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
