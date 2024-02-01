@@ -57,47 +57,61 @@
           <label for="categories">
             <p>Categoria</p>
             <select name="category" id="categories">
-              <option value="show">Show</option>
-              <option value="party">Festa</option>
+              <option value="live">Ao vivo</option>
+              <option value="podcast">Podcast</option>
+              <option value="mentorship">Mentoria</option>
             </select>
           </label>
         </fieldset>
+        <fieldset>
+          <legend>Privacidade</legend>
 
+          <div class="input-wrapper">
+            <label for="email">
+              <p>E-mail do administrador <span>(digite um email válido)</span></p>
+              <input type="email" name="admin_email" id="email" />
+            </label>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="password">
+              <p>Senha de acesso para os participantes <span>mínimo 8 caracteres</span></p>
+              <input type="password" name="event_password" id="password" />
+            </label>
+          </div>
+  
+          <div class="checkbox-wrapper">
+            <label for="private">
+              <input type="checkbox" name="is_private" id="private" />
+              <p>Evento Privado</p>
+            </label>
+          </div>
+        </fieldset>
 
-        <h2>Privacidade</h2>
+        <fieldset>
+          <legend>Data e Hora</legend>
 
-        <label for="email">
-          <p>E-mail do administrador <span>(digite um email válido)</span></p>
-          <input type="email" name="admin_email" id="email" />
-        </label>
-
-        <label for="password">
-          <p>Senha de acesso para os participantes <span>mínimo 8 caracteres</span></p>
-          <input type="password" name="event_password" id="password" />
-        </label>
-
-        <label for="private">
-          <p>Senha de acesso para os participantes <span>mínimo 8 caracteres</span></p>
-          <input type="password" name="is_private" id="private" />
-        </label>
-
-        <h2>Dia e hora</h2>
-
-        <label for="date">
-          Data
-          <input type="date" name="date" id="date" />
-        </label>
-
-        <label for="initial_time">
-          Das
-          <input type="datetime" name="initial_time" id="initial_time" />
-        </label>
-
-        <label for="end_time">
-          Até
-          <input type="datetime" name="end_time" id="end_time" />
-        </label>
-
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="date">
+                Data
+                <input type="date" name="date" id="date" />
+              </label>
+            </div>
+            <div class="input-wrapper">
+              <label for="initial_time">
+                Das
+                <input type="time" name="initial_time" id="initial_time" />
+              </label>
+            </div>
+            <div class="input-wrapper">
+              <label for="end_time">
+                Até
+                <input type="time" name="end_time" id="end_time" />
+              </label>
+            </div>
+          </div>
+        </fieldset>
         <div>
           <button>Salvar evento</button>
         </div>
